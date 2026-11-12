@@ -1,0 +1,55 @@
+""  Brief on Cases Concerning Police Officers’ Immunity
+Police officers’ immunity is a legal protection that may shield officers from personal liability or prosecution for certain acts performed in the course of their duties. However, immunity is not absolute: its scope depends on the jurisdiction, the type of proceedings, and the circumstances of the officer’s conduct.
+The main legal issues include:
+- Qualified or functional immunity: Whether an officer can be held personally liable for unlawful conduct while carrying out official duties.
+- Use of force: Whether force used during an arrest or detention was lawful and proportionate.
+- Arrest and detention: Whether an officer is protected when acting without lawful authority.
+- Criminal liability: Whether official status protects an officer from prosecution for an offence.
+- Human rights violations: Whether immunity can prevent accountability for violations such as torture, unlawful killing, or arbitrary detention.
+Important cases on police immunity in the UK
+1. Hill v Chief Constable of West Yorkshire [1989] AC 53
+The case concerned the police investigation into the Yorkshire Ripper murders. The House of Lords held that the police did not owe the claimant a duty of care in negligence in relation to the investigation and prevention of crime in the circumstances.
+Principle: Police are not automatically liable in negligence for failing to prevent crime. This is not a blanket immunity from all legal claims.
+
+
+
+2. Robinson v Chief Constable of West Yorkshire Police [2018] UKSC 4
+An elderly woman was injured when police officers attempted to arrest a suspect in a public street. The Supreme Court rejected the argument that the police enjoyed a general immunity from negligence claims.
+Principle: Police officers can be liable for injuries caused by their negligent acts, just like other people, subject to ordinary legal principles.
+
+UK Supreme Court
+
+
+
+
+
+3. Michael v Chief Constable of South Wales Police [2015] UKSC 2
+Joanna Michael called the police after her former partner threatened to kill her. A delayed response meant officers did not arrive before she was murdered.
+Principle: The Supreme Court held that the police did not owe her estate a common-law duty of care on the facts. The case illustrates the distinction between failing to protect someone from harm and actively causing harm.
+
+Policing.uk
+
+
+
+
+
+4. DSD and NBV v Commissioner of Police of the Metropolis [2018] UKSC 11
+The case involved serious police failures in investigating sexual offences committed by John Worboys.
+Principle: The police can be held responsible under Article 3 of the European Convention on Human Rights for serious failures to investigate credible allegations of serious violence. Police immunity does not automatically defeat human-rights claims.
+
+Policing.uk
+
+
+
+
+
+5. Tindall v Chief Constable of Thames Valley Police [2024] UKSC 33
+The case concerned whether police intervention and their subsequent failure to protect a person from danger could give rise to negligence liability.
+Principle: The Supreme Court reaffirmed that there is generally no duty to protect someone from harm caused by others, unless an established exception applies. The decision concerns the existence of a duty of care rather than blanket immunity for police officers.
+
+UK Supreme Court
++1
+Conclusion
+The central lesson from these cases is that police officers do not have absolute immunity from civil liability or human-rights claims in the UK. Courts distinguish between negligent acts, failures to prevent harm, failures to investigate crime, and violations of fundamental rights.
+For a legal essay, Hill, Robinson, Michael, DSD and Tindall provide a useful starting point.
+One clarification: Are you studying UK law or US law? The US doctrine of qualified immunity is different from the UK approach, and I can provide a more focused case brief with facts, legal issues, judgments and legal principles for your jurisdiction. ""

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lexa — Legal AI assistant</title>
+<meta name="description" content="Ask legal questions in plain language. Type, attach documents, or speak.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0B0E13;-webkit-font-smoothing:antialiased}
+summary::marker{color:#CDA869}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #CDA869;outline-offset:3px}
+a{color:#E9E4D8;text-decoration:none}a:hover{color:#FFFFFF}
+</style>
+</head>
+<body>
+<div style="background: #0B0E13; color: #E9E4D8; font-family: Inter, system-ui, sans-serif; min-height: 100vh">
+
+<!-- NAV -->
+<header style="border-bottom: 1px solid #1C222C">
+<nav style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: -0.02em; color: #F4EFE4">
+<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CDA869" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"></path><path d="M5 21h14"></path><path d="M4 7h16"></path><path d="M7 7l-3 7a3 3 0 0 0 6 0z"></path><path d="M17 7l-3 7a3 3 0 0 0 6 0z"></path></svg>
+Lexa
+</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; color: #A4ABB6">
+<a href="#features" style="color: #A4ABB6">Features</a>
+<a href="#how" style="color: #A4ABB6">How it works</a>
+<a href="#trust" style="color: #A4ABB6">Privacy</a>
+<a href="#faq" style="color: #A4ABB6">FAQ</a>
+</div>
+<div style="display: flex; align-items: center; gap: 12px">
+<a href="#signin" style="padding: 12px 16px; font-size: 15px; color: #E9E4D8">Sign in</a>
+<a href="#start" style="padding: 12px 20px; border-radius: 999px; background: #CDA869; color: #0B0E13; font-weight: 600; font-size: 15px">Try it free</a>
+</div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<div style="display: inline-flex; align-self: flex-start; align-items: center; gap: 10px; padding: 8px 14px; border: 1px solid #262D38; border-radius: 999px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #B7BDC7; letter-spacing: 0.02em">
+<span style="width: 8px; height: 8px; border-radius: 50%; background: #CDA869"></span>
+AI legal assistant · text, files &amp; voice
+</div>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(44px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.035em; color: #F4EFE4">Legal answers,<br>in plain language.</h1>
+<p style="margin: 0; max-width: 520px; font-size: 19px; line-height: 1.6; color: #A4ABB6">Ask a question, drop in a contract, or just speak. Lexa reads your documents, explains what they mean and points you to the clauses that matter.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; padding-top: 4px">
+<a href="#start" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 26px; border-radius: 999px; background: #CDA869; color: #0B0E13; font-weight: 600; font-size: 16px">
+Ask your first question
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+</a>
+<a href="#how" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 26px; border-radius: 999px; border: 1px solid #2C3440; color: #E9E4D8; font-weight: 500; font-size: 16px">See how it works</a>
+</div>
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #7E8692">General information, not legal advice. For decisions with real consequences, talk to a qualified lawyer.</p>
+</div>
+
+<!-- Product mock -->
+<div style="flex: 1 1 480px; min-width: 0; background: #11151C; border: 1px solid #222934; border-radius: 22px; overflow: hidden">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid #1E2530">
+<div style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #C9CED6; font-weight: 500">
+<span style="width: 8px; height: 8px; border-radius: 50%; background: #5FB98E"></span>
+New conversation
+</div>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #7E8692">Tenancy · UK</span>
+</div>
+<div style="padding: 24px 20px; display: flex; flex-direction: column; gap: 18px">
+<div style="align-self: flex-end; max-width: 86%; display: flex; flex-direction: column; align-items: flex-end; gap: 8px">
+<div style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; background: #171C25; border: 1px solid #262D38; border-radius: 12px; font-size: 13px; color: #C9CED6">
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#CDA869" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5"></path></svg>
+tenancy_agreement.pdf
+<span style="color: #7E8692">· 12 pages</span>
+</div>
+<div style="padding: 14px 18px; background: #1E2430; border-radius: 16px 16px 4px 16px; font-size: 15px; line-height: 1.55; color: #F4EFE4">Can my landlord keep part of my deposit for normal wear and tear?</div>
+</div>
+<div style="max-width: 92%; display: flex; gap: 12px">
+<div style="flex: none; width: 32px; height: 32px; border-radius: 10px; background: #1A1F28; border: 1px solid #2A313D; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#CDA869" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"></path><path d="M4 7h16"></path><path d="M7 7l-3 7a3 3 0 0 0 6 0z"></path><path d="M17 7l-3 7a3 3 0 0 0 6 0z"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.6; color: #D4D8DF">
+<p style="margin: 0">Your agreement says deductions can only cover damage <em style="color: #F4EFE4; font-style: normal; font-weight: 500">beyond fair wear and tear</em>. Scuffs, faded paint and light carpet wear usually fall on the landlord's side.</p>
+<div style="padding: 12px 14px; border: 1px solid #2A313D; border-radius: 12px; background: #0E1218; font-size: 13px; line-height: 1.55; color: #A4ABB6">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #CDA869; padding-bottom: 6px">From your file · Clause 7.2</div>
+"…the Landlord may deduct reasonable costs for damage, excluding fair wear and tear…"
+</div>
+</div>
+</div>
+</div>
+<div style="margin: 0 20px 20px; display: flex; align-items: center; gap: 10px; padding: 10px 10px 10px 16px; background: #0E1218; border: 1px solid #262D38; border-radius: 16px">
+<button type="button" aria-label="Attach a file" style="flex: none; width: 44px; height: 44px; border: 0; border-radius: 12px; background: transparent; color: #A4ABB6; display: flex; align-items: center; justify-content: center; cursor: pointer">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5l-8.5 8.5a5 5 0 0 1-7-7l9-9a3.5 3.5 0 0 1 5 5l-9 9a2 2 0 0 1-3-3l8-8"></path></svg>
+</button>
+<label for="hero-ask" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Ask a legal question</label>
+<input id="hero-ask" type="text" placeholder="Ask a follow-up…" style="flex: 1 1 auto; min-width: 0; height: 44px; border: 0; background: transparent; color: #E9E4D8; font-family: Inter, sans-serif; font-size: 15px; outline: none">
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 3px; padding-right: 4px">
+<span style="width: 3px; height: 10px; border-radius: 2px; background: #CDA869; opacity: 0.5"></span>
+<span style="width: 3px; height: 18px; border-radius: 2px; background: #CDA869; opacity: 0.8"></span>
+<span style="width: 3px; height: 24px; border-radius: 2px; background: #CDA869"></span>
+<span style="width: 3px; height: 14px; border-radius: 2px; background: #CDA869; opacity: 0.7"></span>
+<span style="width: 3px; height: 8px; border-radius: 2px; background: #CDA869; opacity: 0.5"></span>
+</div>
+<button type="button" aria-label="Speak your question" style="flex: none; width: 44px; height: 44px; border: 0; border-radius: 12px; background: #CDA869; color: #0B0E13; display: flex; align-items: center; justify-content: center; cursor: pointer">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0"></path><path d="M12 18v3"></path></svg>
+</button>
+</div>
+</div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" style="border-top: 1px solid #1C222C">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 640px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #CDA869">Three ways to ask</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; letter-spacing: -0.03em; color: #F4EFE4">However the question comes to you.</h2>
+</div>
+<p style="margin: 0; max-width: 380px; font-size: 17px; line-height: 1.6; color: #A4ABB6">Type it, upload the paperwork behind it, or say it out loud. Lexa keeps the whole conversation in context.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+<article style="padding: 32px; background: #11151C; border: 1px solid #1F2631; border-radius: 20px; display: flex; flex-direction: column; gap: 18px">
+<div style="width: 52px; height: 52px; border-radius: 14px; background: #171C25; border: 1px solid #2A313D; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#CDA869" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path><path d="M9.5 9.5a2.5 2.5 0 0 1 4.6 1.3c0 1.7-2.1 2-2.1 3.2"></path><path d="M12 16.5h.01"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em; color: #F4EFE4">Ask anything</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #A4ABB6">Employment, housing, contracts, consumer rights. Get a clear explanation first, with the legal detail underneath when you want it.</p>
+</article>
+<article style="padding: 32px; background: #11151C; border: 1px solid #1F2631; border-radius: 20px; display: flex; flex-direction: column; gap: 18px">
+<div style="width: 52px; height: 52px; border-radius: 14px; background: #171C25; border: 1px solid #2A313D; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#CDA869" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5l-8.5 8.5a5 5 0 0 1-7-7l9-9a3.5 3.5 0 0 1 5 5l-9 9a2 2 0 0 1-3-3l8-8"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em; color: #F4EFE4">Attach your files</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #A4ABB6">Upload contracts, letters or notices. Lexa summarises them, flags unusual terms and quotes the exact clause behind each answer.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; padding-top: 4px">
+<span style="padding: 6px 10px; border: 1px solid #2A313D; border-radius: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B7BDC7">PDF</span>
+<span style="padding: 6px 10px; border: 1px solid #2A313D; border-radius: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B7BDC7">DOCX</span>
+<span style="padding: 6px 10px; border: 1px solid #2A313D; border-radius: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B7BDC7">Images</span>
+</div>
+</article>
+<article style="padding: 32px; background: #11151C; border: 1px solid #1F2631; border-radius: 20px; display: flex; flex-direction: column; gap: 18px">
+<div style="width: 52px; height: 52px; border-radius: 14px; background: #171C25; border: 1px solid #2A313D; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#CDA869" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0"></path><path d="M12 18v3"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em; color: #F4EFE4">Just speak</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #A4ABB6">Tap the mic and explain the situation in your own words. Handy on the move, or when a problem is easier to say than to type.</p>
+</article>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="background: #0F1319; border-top: 1px solid #1C222C; border-bottom: 1px solid #1C222C">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 640px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #CDA869">How it works</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; letter-spacing: -0.03em; color: #F4EFE4">From confusion to clarity in three steps.</h2>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0; border-top: 1px solid #262D38">
+<li style="padding: 32px 32px 8px 0; display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #CDA869">01</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: -0.02em; color: #F4EFE4">Describe your situation</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #A4ABB6">Type or speak your question, and add any documents that relate to it.</p>
+</li>
+<li style="padding: 32px 32px 8px 0; display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #CDA869">02</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: -0.02em; color: #F4EFE4">Lexa reads and reasons</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #A4ABB6">It works through your files and the relevant law, then writes an answer you can follow.</p>
+</li>
+<li style="padding: 32px 32px 8px 0; display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #CDA869">03</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: -0.02em; color: #F4EFE4">Know your next move</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #A4ABB6">See your options, the clauses that support them, and when it's time to bring in a lawyer.</p>
+</li>
+</ol>
+</div>
+</section>
+
+<!-- TRUST -->
+<section id="trust">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #CDA869">Built for trust</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; letter-spacing: -0.03em; color: #F4EFE4">Your documents stay yours.</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #A4ABB6">Legal questions are personal. Lexa is designed to treat them that way.</p>
+</div>
+<div style="flex: 1 1 560px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: #1F2631; border: 1px solid #1F2631; border-radius: 20px; overflow: hidden">
+<div style="padding: 28px; background: #0B0E13; display: flex; flex-direction: column; gap: 12px">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#CDA869" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 19px; color: #F4EFE4">Private by default</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A4ABB6">[Describe your encryption and data-retention policy here.]</p>
+</div>
+<div style="padding: 28px; background: #0B0E13; display: flex; flex-direction: column; gap: 12px">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#CDA869" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h4v4H7z"></path><path d="M7 11c0 3-1 5-3 6"></path><path d="M15 7h4v4h-4z"></path><path d="M15 11c0 3-1 5-3 6"></path></svg>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 19px; color: #F4EFE4">Answers you can check</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A4ABB6">Every answer shows the clause or source it relies on, so nothing is taken on faith.</p>
+</div>
+<div style="padding: 28px; background: #0B0E13; display: flex; flex-direction: column; gap: 12px">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#CDA869" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v4"></path><path d="M12 16h.01"></path></svg>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 19px; color: #F4EFE4">Honest about limits</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A4ABB6">When a question needs a professional, Lexa says so clearly instead of guessing.</p>
+</div>
+<div style="padding: 28px; background: #0B0E13; display: flex; flex-direction: column; gap: 12px">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#CDA869" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"></path><path d="M12 3a14 14 0 0 1 0 18"></path><path d="M12 3a14 14 0 0 0 0 18"></path><circle cx="12" cy="12" r="9"></circle></svg>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 19px; color: #F4EFE4">Jurisdiction aware</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A4ABB6">[List the countries or regions your agent covers.]</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="border-top: 1px solid #1C222C">
+<div style="max-width: 880px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 40px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(34px, 4vw, 48px); line-height: 1.05; letter-spacing: -0.03em; color: #F4EFE4">Questions, answered.</h2>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #262D38">
+<details style="padding: 24px 0; border-bottom: 1px solid #262D38">
+<summary style="cursor: pointer; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 500; color: #F4EFE4">Is this a replacement for a lawyer?</summary>
+<p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #A4ABB6">No. Lexa gives general legal information to help you understand where you stand. For advice on your specific case, especially anything going to court, speak with a qualified lawyer.</p>
+</details>
+<details style="padding: 24px 0; border-bottom: 1px solid #262D38">
+<summary style="cursor: pointer; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 500; color: #F4EFE4">What kinds of files can I upload?</summary>
+<p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #A4ABB6">[List supported formats and size limits.]</p>
+</details>
+<details style="padding: 24px 0; border-bottom: 1px solid #262D38">
+<summary style="cursor: pointer; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 500; color: #F4EFE4">How does voice input work?</summary>
+<p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #A4ABB6">Tap the microphone, describe your situation naturally, and Lexa turns it into a question it can answer. You can review the transcript before sending.</p>
+</details>
+<details style="padding: 24px 0; border-bottom: 1px solid #262D38">
+<summary style="cursor: pointer; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 500; color: #F4EFE4">How much does it cost?</summary>
+<p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #A4ABB6">[YOUR PRICING]</p>
+</details>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section id="start" style="padding: 0 24px 104px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 48px; border: 1px solid #2A313D; border-radius: 28px; background: #11151C; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 48px); line-height: 1.05; letter-spacing: -0.03em; color: #F4EFE4">Got a legal question?<br>Ask it now.</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #A4ABB6">Type, attach or speak. Your first answer is moments away.</p>
+</div>
+<a href="#start" style="display: inline-flex; align-items: center; gap: 10px; padding: 18px 30px; border-radius: 999px; background: #CDA869; color: #0B0E13; font-weight: 600; font-size: 17px">
+Start for free
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top: 1px solid #1C222C">
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; font-size: 14px; color: #7E8692">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px; color: #E9E4D8">Lexa</span>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<a href="#privacy" style="color: #8E96A2">Privacy</a>
+<a href="#terms" style="color: #8E96A2">Terms</a>
+<a href="#contact" style="color: #8E96A2">Contact</a>
+</div>
+<span>Lexa provides legal information, not legal advice.</span>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
